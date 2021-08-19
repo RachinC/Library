@@ -10,7 +10,10 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>
@@ -32,3 +35,11 @@ a {
   color: #42b983;
 }
 </style>
+
+<docs lang="md">
+## Examples
+
+```jsx
+<HelloWorld msg="Welcome to Your Vue.js App"/>
+```
+</docs>
